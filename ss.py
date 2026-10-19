@@ -40,4 +40,4 @@ else:
     col1.metric("Predicted next-day return", f"{result['next_return']*100:.2f}%")
     col2.metric("Direction accuracy", f"{result['direction_acc']*100:.1f}%")
     col3.metric("Beats baseline?", "Yes" if result["mae_model"] < result["mae_baseline"] else "No")
-    sl.caption("Learning project, not financial advice.")
+    sl.caption("Learning project, not financial advice, unless you dumb as hell.")
