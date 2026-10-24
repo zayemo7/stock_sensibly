@@ -24,7 +24,7 @@ train/test split, baseline comparison), not as a trading tool.
 ## Run locally
     python -m venv .myenv
     source .myenv/bin/activate
-##check  if git is installed locally via git--version
+## Check  if git is installed locally via git--version
 
     git clone https://github.com/zayemo7/stock_sensibly.git
     cd stocksense
