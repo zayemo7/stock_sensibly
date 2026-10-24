@@ -6,7 +6,10 @@ from model import train_and_evaluate
 
 sl.title("StockSense")
 
-ticker = sl.text_input("Ticker","AAPL").upper()
+from tickers import TICKERS
+
+choice = sl.selectbox("Stock / Crypto", list(TICKERS.keys()))
+ticker = TICKERS[choice]
 period = sl.selectbox("Period",["1mo","3mo","6mo","1y","2y","5y"],index=3)
 
 from datetime import datetime, timedelta
